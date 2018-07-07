@@ -1,0 +1,33 @@
+
+<?php
+$user_logo = array(
+	
+	'URL of image file',
+	'URL of image file',
+	'URL of image file',
+);
+         
+$randVal = rand( 0, count( $user_logo ) - 1);
+$random = $user_logo[  $randVal ];
+$randomClass = $desktop_class[ $randVal ];
+echo '<a href="URL of where you want the logo to point to"><img class="desktop-logo"' . $randomClass . '" src="' . $random . '" alt="" /></a>';
+       
+?>
+                
+                
+<?php
+                
+$mobile_logo = array(
+
+	' URL of image file ',
+	' URL of image file ',
+	' URL of image file ',
+);
+                
+$randVal = rand( 0, count( $user_logo ) - 1);
+$random = $mobile_logo[  $randVal ];
+$randomClass = $mobile_class[ $randVal ];
+echo '<a href="URL of where you want the logo to point to"><img class="mobile-logo"' . $randomClass . '" src="' . $random . '" alt="" /></a>';
+       
+?>
+   
